@@ -1,0 +1,232 @@
+/* Layan Interiors — English site copy */
+
+export const en = {
+  nav: {
+    work: "Work",
+    services: "Services",
+    studio: "Studio",
+    contact: "Contact",
+    book: "Book a consultation",
+  },
+  hero: {
+    eyebrow: "Interior Architecture Studio — Cairo · Dubai",
+    title1: "Calm, built from",
+    title2: "stone, oak, and light",
+    subtitle:
+      "Layan designs residential and hospitality interiors across Egypt and the Gulf — from the first sketch to the last cushion.",
+    cta1: "Book a consultation",
+    cta2: "View our work",
+    scroll: "Scroll",
+  },
+  intro: {
+    eyebrow: "The Studio",
+    title: "Quiet rooms, considered light.",
+    body1:
+      "Layan is a nine-year-old interior architecture studio working between Cairo and Dubai. We take on a small number of projects a year so that each one gets the attention a home actually deserves — measured, drawn, and built to the millimetre.",
+    body2:
+      "Our work leans warm and quiet: natural stone, oiled oak, linen, brass that ages gracefully. We believe a room should still look good in year ten — which is why we specify finishes for how they age, not how they photograph.",
+    link: "More about the studio",
+  },
+  stats: [
+    { value: "118", label: "Projects delivered" },
+    { value: "9", label: "Years of practice" },
+    { value: "2", label: "Studios — Cairo & Dubai" },
+    { value: "96%", label: "Clients by referral" },
+  ],
+  featured: {
+    eyebrow: "Selected Work",
+    title: "Rooms with a point of view",
+    subtitle: "Six of the one hundred and eighteen. Each one different, because each family is.",
+    viewAll: "View all work",
+    explore: "Explore project",
+  },
+  services: {
+    eyebrow: "What We Do",
+    title: "Three ways to work together",
+    subtitle: "From a single room that needs saving, to a full turnkey build.",
+    packages: [
+      {
+        name: "Interior Architecture",
+        tagline: "Full spatial redesign",
+        desc: "Layouts re-planned, lighting designed, joinery drawn, materials specified — a home rebuilt around how you actually live.",
+        items: [
+          "Space planning & layouts",
+          "Lighting & electrical design",
+          "Custom joinery drawings",
+          "Material & finish schedule",
+        ],
+        price: "From EGP 350,000 · per project",
+        duration: "4–8 months",
+      },
+      {
+        name: "Furnishing & Styling",
+        tagline: "Curate, source, place",
+        desc: "Furniture, textiles, lighting and art — selected, procured and placed. For homes with good bones that need the right clothes.",
+        items: [
+          "Furniture & textile curation",
+          "Procurement & logistics",
+          "Art & object placement",
+          "White-glove installation",
+        ],
+        price: "From EGP 150,000 · per project",
+        duration: "6–10 weeks",
+      },
+      {
+        name: "Turnkey Delivery",
+        tagline: "Design-build, move-in ready",
+        desc: "We design it, build it, procure it and hand it over with the keys. One contract, one schedule, one number to call.",
+        items: [
+          "Everything in Interior Architecture",
+          "Site management & quality control",
+          "Procurement & installation",
+          "Handover documentation",
+        ],
+        price: "Quoted per project",
+        duration: "8–14 months",
+      },
+    ],
+    cta: "Start with a consultation",
+    processTitle: "How a project runs",
+    process: [
+      { step: "01", title: "Consultation", body: "Sixty minutes, free of charge, at your site or ours. We listen more than we talk." },
+      { step: "02", title: "Concept", body: "Mood, plan options, and a realistic budget range — within two weeks." },
+      { step: "03", title: "Design development", body: "Drawings, materials, and joinery details you can sign off on." },
+      { step: "04", title: "Procure & build", body: "We order, track, and supervise. You get weekly photo reports." },
+      { step: "05", title: "Install & handover", body: "Styling day, walkthrough, and a maintenance book for everything." },
+    ],
+  },
+  testimonial: {
+    quote: "They listened for an hour before drawing a single line. Six months later we were living in a house that finally made sense.",
+    author: "Amira H.",
+    meta: "Kattameya Villa, New Cairo",
+  },
+  cta: {
+    title: "Bring us your rooms.",
+    body: "A free 60-minute consultation — in Arabic or English, in Cairo, Dubai, or anywhere in the Gulf.",
+    button: "Book a consultation",
+  },
+  work: {
+    eyebrow: "Our Work",
+    title: "Selected projects",
+    subtitle: "Filter by typology — or simply scroll.",
+    filters: { all: "All", residential: "Residential", hospitality: "Hospitality" },
+    meta: { location: "Location", year: "Year", area: "Area", scope: "Scope" },
+    viewProject: "View project",
+  },
+  project: {
+    back: "All work",
+    nextProject: "Next project",
+    deliverables: "What we delivered",
+    gallery: "Gallery",
+  },
+  studio: {
+    eyebrow: "The Studio",
+    title: "A small studio, on purpose",
+    paragraphs: [
+      "Layan began in 2016 in a Zamalek flat with one draftsman's desk and a stubborn belief: that Egyptian homes deserved the same rigor as Egyptian architecture. Nine years later we are fourteen people across two studios — and still deliberately small.",
+      "We cap our projects at a number we can personally visit every week. Our founder reviews every drawing set before it leaves the studio. And our site leads hold keys to every project — not just the good ones.",
+      "The Dubai studio opened in 2023 to serve GCC clients without flights-and-facetime logistics. Same drawings, same standards, same Saturday-morning site visits — just a different airport.",
+    ],
+    valuesTitle: "What we believe",
+    values: [
+      { title: "Measure twice", body: "Every drawing is dimensioned on site, not on Google Maps. Walls in Egypt are rarely where the plan says they are." },
+      { title: "Light first", body: "We start every project by studying where the sun lands at 8 a.m., noon, and 6 p.m. — then we place the rooms." },
+      { title: "Local where it counts", body: "Egyptian marble, Siwan salt, Damietta joinery. Local materials age better here — and budgets travel further." },
+    ],
+    locationsTitle: "Find us",
+    cairo: {
+      label: "Cairo — Studio & workshop",
+      address: "14 Hassan Sabry St., Zamalek, Cairo",
+      hours: "Sat–Thu · 10:00–18:00",
+    },
+    dubai: {
+      label: "Dubai — Studio",
+      address: "Unit 7, Alserkal Avenue, Al Quoz 1, Dubai",
+      hours: "Mon–Fri · 10:00–18:00",
+    },
+  },
+  contact: {
+    eyebrow: "Book a Consultation",
+    title: "Tell us about your rooms",
+    subtitle: "Sixty minutes, free, no obligation — in Arabic or English. We reply within one business day.",
+    form: {
+      name: "Full name",
+      namePh: "e.g. Nour El Siedy",
+      phone: "Mobile number",
+      phonePh: "+20 1X XXXX XXXX",
+      email: "Email (optional)",
+      emailPh: "you@example.com",
+      city: "City",
+      cities: ["Cairo", "New Cairo / Kattameya", "Alexandria", "North Coast", "Dubai", "Abu Dhabi", "Riyadh", "Other"],
+      service: "What do you need?",
+      services: ["Interior architecture", "Furnishing & styling", "Turnkey delivery", "Not sure yet — advise me"],
+      budget: "Project budget",
+      budgets: ["Under EGP 500k", "EGP 500k – 1M", "EGP 1M – 3M", "EGP 3M+ / AED equivalent", "Still deciding"],
+      timeline: "When do you want to start?",
+      timelines: ["As soon as possible", "Within 3 months", "Within 6 months", "Just exploring"],
+      date: "Preferred consultation date",
+      dateHint: "We confirm by phone or WhatsApp",
+      notes: "About your space (optional)",
+      notesPh: "Rooms, style, what bothers you today…",
+      submit: "Request consultation",
+      sending: "Sending…",
+      success: {
+        title: "Request received",
+        body: "Your reference is",
+        body2: "We'll call or WhatsApp you within one business day to confirm a time. Consultations run about an hour — bring photos of the space if you have them.",
+        again: "Book another consultation",
+      },
+      error: "Something went wrong — please try again, or WhatsApp us directly.",
+      errors: {
+        name: "Please enter your name",
+        phone: "Please enter a valid phone number",
+      },
+    },
+    info: {
+      phone: "+20 2 0000 0000",
+      whatsapp: "WhatsApp us",
+      email: "hello@layan.studio",
+      hours: "Sat–Thu · 10:00–18:00 (Cairo)",
+      response: "We reply within one business day.",
+    },
+    faq: {
+      title: "Quick answers",
+      items: [
+        {
+          q: "Is the consultation really free?",
+          a: "Yes — sixty minutes with a designer, no obligation and no follow-up spam. If we're not the right studio for your project, we'll say so and suggest where to look.",
+        },
+        {
+          q: "Do you work outside Egypt?",
+          a: "Across the GCC — our Dubai studio serves the UAE, Saudi Arabia and Qatar without flying teams in for every meeting.",
+        },
+        {
+          q: "Can you work with my existing architect?",
+          a: "Happily. We frequently handle interiors and joinery while a separate architect handles the shell — clean scopes, one coordination meeting a week.",
+        },
+        {
+          q: "How do payments work?",
+          a: "Milestones tied to drawings and site progress — never large sums upfront. You'll see the full schedule before you sign anything.",
+        },
+      ],
+    },
+  },
+  footer: {
+    tagline: "Interior architecture for homes and retreats across Egypt and the Gulf.",
+    rights: "All rights reserved.",
+    disclaimer: "Layan is a concept website created to showcase bilingual web design and booking systems.",
+    credit: "Concept & code: Abdelhady Gabriel",
+    explore: "Explore",
+    work: "Work",
+    services: "Services",
+    studio: "Studio",
+    contact: "Contact",
+    follow: "Follow",
+  },
+  common: {
+    langLabel: "العربية",
+    madeWith: "Concept demo · Bilingual AR/EN · RTL-native",
+  },
+};
+
+export type LayanDict = typeof en;
