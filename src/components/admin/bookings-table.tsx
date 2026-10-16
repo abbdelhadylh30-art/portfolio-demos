@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, CalendarDays, Loader2 } from "lucide-react";
+import { ArrowLeft, CalendarDays, Loader2, RefreshCw } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type AdminBooking = {
@@ -38,7 +38,15 @@ const brandMeta: Record<string, { label: string; cls: string }> = {
   coolfix: { label: "CoolFix", cls: "bg-teal-500/15 text-teal-300 border-teal-500/30" },
 };
 
-export function BookingsTable({ initial }: { initial: AdminBooking[] }) {
+export function BookingsTable({
+  initial,
+  onRefresh,
+  refreshing = false,
+}: {
+  initial: AdminBooking[];
+  onRefresh?: () => void;
+  refreshing?: boolean;
+}) {
   const [rows, setRows] = useState(initial);
   const [brand, setBrand] = useState<"all" | "layan" | "lumiere" | "coolfix">("all");
   const [updating, setUpdating] = useState<string | null>(null);
@@ -85,10 +93,26 @@ export function BookingsTable({ initial }: { initial: AdminBooking[] }) {
               Every booking from all three concept demos, in one place.
             </p>
           </div>
-          <span className="flex items-center gap-2 rounded-full border border-[#2a241b] px-4 py-2 text-[12px] text-[#a89e8d]">
-            <CalendarDays className="h-4 w-4 text-[#a98c5f]" aria-hidden />
-            {counts.all} total
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="flex items-center gap-2 rounded-full border border-[#2a241b] px-4 py-2 text-[12px] text-[#a89e8d]">
+              <CalendarDays className="h-4 w-4 text-[#a98c5f]" aria-hidden />
+              {counts.all} total
+            </span>
+            {onRefresh ? (
+              <button
+                onClick={onRefresh}
+                disabled={refreshing}
+                className="flex items-center gap-2 rounded-full border border-[#2a241b] px-4 py-2 text-[12px] text-[#a89e8d] transition-colors hover:border-[#a98c5f]/50 hover:text-[#c8ab77] disabled:opacity-50"
+                aria-label="Refresh bookings"
+              >
+                <RefreshCw
+                  className={cn("h-4 w-4", refreshing && "animate-spin")}
+                  aria-hidden
+                />
+                Refresh
+              </button>
+            ) : null}
+          </div>
         </div>
 
         {/* Brand tabs */}
@@ -206,8 +230,9 @@ export function BookingsTable({ initial }: { initial: AdminBooking[] }) {
         </div>
 
         <p className="mt-6 text-[11.5px] text-[#6b6355]">
-          Demo dashboard — status changes persist to SQLite via Prisma. This is what a studio
-          owner sees instead of an inbox full of screenshots.
+          Demo dashboard — requests are kept in memory (they reset when the server
+          restarts) and land here in real time. This is what a business owner sees
+          instead of an inbox full of WhatsApp screenshots.
         </p>
       </div>
     </div>
